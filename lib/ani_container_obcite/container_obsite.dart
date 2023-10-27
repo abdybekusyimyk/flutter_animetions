@@ -9,12 +9,13 @@ class ContainerObsite extends StatefulWidget {
 }
 
 class _ContainerObsiteState extends State<ContainerObsite> {
-  double margin = 30;
+  double margin = 30.9;
+  // int san = 10.0;
   Color color = Colors.teal;
   double width = 200;
   double height = 200;
 
-  bool islect = true;
+  bool islect = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,8 +45,10 @@ class _ContainerObsiteState extends State<ContainerObsite> {
               ElevatedButton(
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.cyan),
                 onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Birinchi()));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const Birinchi()));
                   // setState(() {
 
                   //   margin = 10.0;
@@ -59,7 +62,7 @@ class _ContainerObsiteState extends State<ContainerObsite> {
               ElevatedButton(
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.amber),
                 onPressed: () {},
-                child: Text('3'),
+                child: const Text('3'),
               ),
             ],
           ),
@@ -71,7 +74,7 @@ class _ContainerObsiteState extends State<ContainerObsite> {
             height: islect ? height : 100,
             color: islect ? color : Colors.red,
             child: AnimatedOpacity(
-                duration: Duration(seconds: 1),
+                duration: const Duration(seconds: 1),
                 opacity: islect ? 1.0 : 0.0,
                 child: Center(
                   child: Text(
