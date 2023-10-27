@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animetions/ani_container_obcite/container_obsite.dart';
 import 'package:flutter_animetions/animetion_controler/ani_controler.dart';
+import 'package:flutter_animetions/curves/test.dart';
 import 'package:flutter_animetions/hero/heroanimation.dart';
+import 'package:flutter_animetions/sun/sun.dart';
 import 'package:flutter_animetions/tweenanimation/tween_animashin.dart';
 
 class HomeView extends StatelessWidget {
@@ -66,13 +68,21 @@ class HomeView extends StatelessWidget {
             const SizedBox(height: 20),
             GestureDetector(
                 onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const AniControler()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Test1()));
                 },
                 child: const Text(
-                  "Curves",
+                  "Test1",
+                  style: TextStyle(fontSize: 20),
+                )),
+            const SizedBox(height: 20),
+            GestureDetector(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Sun()));
+                },
+                child: const Text(
+                  "Sun",
                   style: TextStyle(fontSize: 20),
                 )),
           ],
