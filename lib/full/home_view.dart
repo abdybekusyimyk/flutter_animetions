@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animetions/ani_container_obcite/container_obsite.dart';
-import 'package:flutter_animetions/animetion_controler/ani_controler.dart';
-import 'package:flutter_animetions/curves/test.dart';
-import 'package:flutter_animetions/hero/heroanimation.dart';
-import 'package:flutter_animetions/sun/sun.dart';
-import 'package:flutter_animetions/tweenanimation/tween_animashin.dart';
+import 'package:flutter_animetions/full/ani_container_obcite/container_obsite.dart';
+import 'package:flutter_animetions/full/animetion_controler/ani_controler.dart';
+import 'package:flutter_animetions/full/curves/test.dart';
+import 'package:flutter_animetions/full/hero/heroanimation.dart';
+import 'package:flutter_animetions/full/sun/sun.dart';
+import 'package:flutter_animetions/full/tweenanimation/tween_animashin.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key? key}) : super(key: key);

@@ -35,3 +35,16 @@ class _SunState extends State<Sun> {
     );
   }
 }
+
+class Suddn extends StatelessWidget {
+  const Suddn({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+
+GestureDetectorljanslnd() {}
+
+EntryModeChangeCallbackdnaldjn() {}
