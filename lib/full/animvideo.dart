@@ -57,9 +57,32 @@ class AnimvideoState extends State<Animvideo>
                 // isSelect ? Alignment.centerLeft : Alignment.centerRight,
                 children: [
                   AnimatedPositioned(
-                    left: 20,
-                    // right: 50,
-                    duration: Duration(seconds: 1),
+                    duration: const Duration(seconds: 2),
+                    left: isSelect ? 50 : 240,
+                    top: isSelect ? 8 : 70,
+                    child: AnimatedContainer(
+                      duration: Duration(seconds: 1),
+                      width: 25,
+                      height: 25,
+                      decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                              begin: Alignment.center,
+                              end: Alignment.topRight,
+                              colors: isSelect
+                                  ? [
+                                      Colors.red,
+                                      Colors.yellow,
+                                      // Colors.yellowAccent,
+                                    ]
+                                  : [Colors.yellow, Colors.yellow]),
+                          // color: Colors.amber,
+                          borderRadius: BorderRadius.circular(50)),
+                    ),
+                  ),
+                  AnimatedPositioned(
+                    duration: const Duration(seconds: 1),
+                    left: 40,
+                    top: 30,
                     child: ClipPath(
                       clipper: _MyClipper(),
                       child: AnimatedContainer(
